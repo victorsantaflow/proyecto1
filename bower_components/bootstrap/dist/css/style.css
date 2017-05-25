@@ -2,7 +2,9 @@
   font-size: 32px;
 
 }
-
+.body{
+  padding-top: : 70px;
+}
 .footer{
   padding: 20px 0;
 }
@@ -27,10 +29,6 @@ body{
   color: #9af7fe;
 }
 @media only screen and (max-width:768px)  {
-  body{
-    margin-bottom: 400px;
-  }
-  .footer{
-    height: 400px;
-  }
+  body{ margin-bottom: 300px;  }
+  .footer{ height: 300px; font-size: 0.5em; }
 }
