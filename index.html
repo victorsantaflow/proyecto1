@@ -8,23 +8,36 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/style.css">
 </head>
 
-<body>
+<body >
 
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
-    <a href="#" class="navbar-brand"> Up and runniing with bootstrap</a>
 
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+<div class="navbar-header">
+  <a href="#" class="navbar-brand"> Up and runniing with bootstrap</a>
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
 
   <ul class="nav nav-pills navbar-nav navbar-right collapse navbar-collapse">
     <li><a href="#">Home</a></li>
     <li><a href="#">Reservations</a></li>
-    <li><a href="#">classroom</a></li>
+    <li>
+      <a href="#"  data-toggle="dropdown">About <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">contact US</a></li>
+        <li class="divider"></li>
+        <li><a href="#">Blog</a></li>
+          <li class="divider"></li>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">facebook</a></li>
+      </ul>
+    </li>
   </ul>
     </div>
   </div>
@@ -33,17 +46,19 @@
 
   <!-- /.titulo -->
 
-<div class="row  well well-lg" >
-  <div class="col-sm-6 lead">
-    <h2>Book Today</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsam id unde molestias saepe, ea autem esse iusto eveniet non?</p>
-    <button type=button class="btn btn-lg btn-default">Take the Tour</button>
-    <button type=button class="btn btn-lg btn-primary"> Book Ticjets Now!</button>
+  <div class="row  well well-lg" >
+    <div class="col-sm-6 lead">
+      <h2>Book Today</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ipsam id unde molestias saepe, ea autem esse iusto eveniet non?</p>
+      <button type=button class="btn btn-lg btn-default">Take the Tour</button>
+      <button type=button class="btn btn-lg btn-primary"> Book Ticjets Now!</button>
+    </div>
+    <div class=" col-md-6 visible-md-sm visible-lg">
+      <img src="img/a.jpeg" alt="jgjy" width="520">
+    </div>
   </div>
-  <div class=" col-md-6 visible-md-sm visible-lg">
-    <img src="img/a.jpeg" alt="jgjy" width="520">
-  </div>
-</div>
+
+
 <!-- /.Book Today -->
 
 <div class="row text-center feature">
@@ -121,6 +136,6 @@
 
 
   <script src="bower_components/jquery/dist/jquery.js"></script>
-  <script type="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 </html>
